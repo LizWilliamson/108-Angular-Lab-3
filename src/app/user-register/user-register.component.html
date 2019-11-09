@@ -1,0 +1,62 @@
+<h3>Register New User</h3>
+
+<div class="row">
+    <div class="form col col-6 offset-3">
+
+    <div class="form-group row">
+        <label for="text" class="col-4 col-form-label">User Name:</label>
+        <div class="col-8">
+            <input type="text" [(ngModel)]="model.userName" name="userName" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+    <label for="text1" class="col-4 col-form-label">Password:</label>
+    <div class="col-8">
+        <input type="password" [(ngModel)]="model.password" name="password" class="form-control">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label for="text2" class="col-4 col-form-label">Retype Password:</label>
+    <div class="col-8">
+        <input type="password" [(ngModel)]="retypePassword" name="retypePassword" class="form-control">
+    </div>
+    </div>
+   
+    <div class="form-group row">
+    <label for="text4" class="col-4 col-form-label">First Name:</label>
+    <div class="col-8">
+        <input type="text" [(ngModel)]="model.firstName" name="firstName" class=" form-control">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label for="text5" class="col-4 col-form-label">Last Name:</label>
+    <div class="col-8">
+        <input type="text" [(ngModel)]="model.lastName" name="lastName" class="form-control">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label for="text6" class="col-4 col-form-label">Email:</label>
+    <div class="col-8">
+        <input type="text" [(ngModel)]="model.email" name="email" class="form-control">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label for="text7" class="col-4 col-form-label">Address:</label>
+    <div class="col-8">
+        <input type="text" [(ngModel)]="model.address" name="address" class="form-control">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label for="text8" class="col-4 col-form-label">Phone Number:</label>
+    <div class="col-8">
+        <input type="text" [(ngModel)]="model.phone" name="phone" class="form-control">
+    </div>
+    </div>
+    <div class="form-group row">
+    <div class="offset-6 col-8">
+    <button (click)="registerUser()" type="button" class="btn btn-info">Save User</button>
+    </div>
+    </div>
+
+    </div>
+</div>
